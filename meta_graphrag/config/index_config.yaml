@@ -1,0 +1,29 @@
+# 索引策略配置
+indexes:
+  unique_indexes:
+    - node_label: "SubjectDomain"
+      property: "name"
+    - node_label: "Database"
+      property: "name"
+    - node_label: "PhysicalTable"
+      property: "table_name"
+  
+  regular_indexes:
+    - node_label: "BusinessDomain"
+      property: "name"
+    - node_label: "BusinessSubject"
+      property: "name"
+    - node_label: "LogicalEntity"
+      property: "name"
+    - node_label: "Field"
+      property: "business_term"
+    - node_label: "Field"
+      property: "data_source_unit"
+  
+  fulltext_indexes:
+    - name: "logical_entity_fulltext"
+      node_label: "LogicalEntity"
+      properties: ["logical_name"]
+    - name: "field_comment_fulltext"
+      node_label: "Field"
+      properties: ["comment"]

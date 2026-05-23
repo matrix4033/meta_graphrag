@@ -1,0 +1,29 @@
+# 文件名解析规则
+filename_pattern:
+  regex: "^([\\d\\.]+)-(.*?)-(.*?)-(.*?)\\.sql$"
+  groups:
+    code: 1
+    business_domain: 2
+    business_subject: 3
+    logical_entity: 4
+
+# 文件路径解析规则
+path_pattern:
+  regex: "ddls/([^/]+)/"
+  groups:
+    subject_domain: 1
+
+# 默认分类值
+default_classification:
+  subject_domain: "未分类主题域"
+  business_domain: "未分类业务域"
+  business_subject: "未分类业务主题"
+  logical_entity: "未分类逻辑实体"
+
+# 主题域到数据库名称映射
+subject_domain_to_database:
+  "自然人": "zrr"
+  "死亡库": "swk"
+  "法人": "fr"
+  "ZRR": "zrr"
+  "SWK": "swk"

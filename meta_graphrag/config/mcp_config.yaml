@@ -1,0 +1,23 @@
+# MCP服务器配置
+mcp:
+  max_results: 100
+  default_page_size: 20
+  max_path_depth: 10
+  max_paths: 50
+  max_response_size: 50000  # 最大响应大小（字符数）
+  
+  # 工具启用配置
+  enabled_tools:
+    - "get_graph_overview"
+    - "list_subject_domains"
+    - "search_by_keyword"
+    - "search_by_attribute"
+    - "get_node_by_name"
+    - "get_node_details"
+    - "get_node_neighbors"
+    - "find_shortest_path"
+    - "find_all_paths"
+    - "get_business_lineage"
+    - "get_technical_lineage"
+    - "discover_related_by_relationship"
+    - "get_subgraph"

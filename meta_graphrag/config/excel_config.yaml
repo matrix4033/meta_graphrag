@@ -1,0 +1,67 @@
+# Excel列名映射规则
+column_mapping:
+  business_domain:
+    patterns:
+      - "业务域"
+  level1:
+    patterns:
+      - "一级类目"
+  level2:
+    patterns:
+      - "二级类目"
+  level3:
+    patterns:
+      - "三级类目"
+  data_element:
+    patterns:
+      - "数据元名称"
+  business_description:
+    patterns:
+      - "业务说明"
+  logical_entity:
+    patterns:
+      - "逻辑实体"
+      - "实体名称"
+      - "表名称"
+  table_name:
+    patterns:
+      - "物理表名"
+      - "表名"
+      - "table_name"
+  field_name:
+    patterns:
+      - "字段名"
+      - "列名"
+      - "field_name"
+  business_term:
+    patterns:
+      - "业务术语"
+      - "业务名称"
+      - "中文名"
+      - "数据元名称"
+  data_source_unit:
+    patterns:
+      - "数源单位"
+      - "数据来源"
+      - "来源部门"
+  data_standard:
+    patterns:
+      - "数据标准"
+      - "标准编号"
+      - "国标"
+  data_format:
+    patterns:
+      - "数据元格式"
+      - "数据格式"
+      - "格式"
+  value_domain:
+    patterns:
+      - "值域"
+      - "取值范围"
+      - "值范围"
+
+# 编码尝试顺序
+encoding_order:
+  - "GB2312"
+  - "UTF-8"
+  - "GBK"
