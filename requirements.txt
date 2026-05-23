@@ -1,0 +1,3 @@
+# 数据治理 Agent - Builder CLI 依赖
+# Python 3.10+
+# 无外部依赖 — Builder 是纯 Python 确定性 SQL 生成
