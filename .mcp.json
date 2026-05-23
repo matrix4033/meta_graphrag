@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "meta_graphrag": {
+      "command": "python",
+      "args": ["meta_graphrag/src/main.py", "serve", "--config-dir", "meta_graphrag/config"]
+    }
+  }
+}
